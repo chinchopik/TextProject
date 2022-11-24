@@ -1,0 +1,75 @@
+﻿<Window x:Class="RemakeProject.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RemakeProject"
+        xmlns:vm="clr-namespace:RemakeProject.ViewModels"
+        mc:Ignorable="d"
+        Title="TextAnalyzer" Height="350" Width="600">
+    <Window.DataContext>
+        <vm:TextAnalyze/>
+    </Window.DataContext>
+        
+    <Grid ShowGridLines="False">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.1*"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0.5*"/>
+            <ColumnDefinition Width="0.1*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.1*"/>
+            <RowDefinition/>
+            <RowDefinition Height="0.35*"/>
+        </Grid.RowDefinitions>
+
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                <GradientStop Color="#D3CCE3"/>
+                <GradientStop Color="#E9E4F0"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <TextBox x:Name="textBox"
+                 Style="{DynamicResource InputBoxStyle}"
+                 Text="{Binding Text, UpdateSourceTrigger=PropertyChanged}"/>
+
+        <Label Content="Гласные:"
+                   Margin="0,10,0,0"
+                   Style="{DynamicResource LabelStyle}"/>
+        <TextBlock x:Name="Vowels"
+                       Margin="35,15,0,0"
+                       Style="{DynamicResource CountSymbolsStyle}"
+                       Text="{Binding Vowels, Mode=OneWay}"/>
+            
+        <Label Content="Согласные:"
+                   Margin="0,40,0,0"
+                   Style="{DynamicResource LabelStyle}"/>
+        <TextBlock x:Name="Consonants"
+                       Margin="35,45,0,0"      
+                       Text="{Binding Consonants, Mode=OneWay}"
+                       Style="{DynamicResource CountSymbolsStyle}"/>
+                       
+        <Label Content="Цифры:"
+                   Margin="0,70,0,0"
+                   Style="{DynamicResource LabelStyle}"/>
+        <TextBlock x:Name="Numbers"
+                       Margin="35,75,0,0"
+                       
+                       Text="{Binding Numbers, Mode=OneWay}"
+                       Style="{DynamicResource CountSymbolsStyle}"/>
+            
+        <Label Content="Символы:"
+                   Margin="0,100,0,0"
+                   Style="{DynamicResource LabelStyle}"/>
+        <TextBlock x:Name="SpecialSymbols"
+                       Margin="35,105,0,0"
+                       Text="{Binding SpecialSymbols, Mode=OneWay}"
+                       Style="{DynamicResource CountSymbolsStyle}"/>
+
+        <Button x:Name="FileInputButton"
+                Command="{Binding Path=FileInput}"
+                Style="{DynamicResource FileInputStyle}"/>
+    </Grid>
+</Window>
