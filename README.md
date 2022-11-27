@@ -1,4 +1,4 @@
-# RemakeProject
+# TextAnalyzer
 Remake old project - TextAnalyzer
 
 TextAnalyzer makes possible to count various symbols in the text. Input text is carried out by file input (.txt file) and manual input using textbox.
