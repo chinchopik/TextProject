@@ -14,16 +14,15 @@ using System.Windows.Input;
 
 namespace RemakeProject.ViewModels
 {
-    class TextAnalyze : INotifyPropertyChanged
+    class TextAnalyze : ViewModelBase
     {
-        public event PropertyChangedEventHandler PropertyChanged;
-        public void OnPropertyChanged([CallerMemberName] string prop = "")
-        {
-            if (PropertyChanged != null)
-                PropertyChanged(this, new PropertyChangedEventArgs(prop));
-        }
-
+        
         private string _textBox;
+
+        public string CurrentUser
+        {
+            get => Properties.Settings.Default.UserLogin;
+        }
         public string Text
         {
             get => _textBox;
@@ -67,6 +66,7 @@ namespace RemakeProject.ViewModels
         public TextAnalyze()
         {
             FileInput = new FileInput(this);
+
         }
 
         public void OnExecute()

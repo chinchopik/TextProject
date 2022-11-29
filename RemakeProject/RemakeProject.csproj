@@ -10,6 +10,8 @@
 
   <ItemGroup>
     <None Remove="Resources\browser-6_91015.ico" />
+    <None Remove="Resources\login.png" />
+    <None Remove="Resources\wallpaper.jpeg" />
   </ItemGroup>
 
   <ItemGroup>
@@ -22,14 +24,31 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Resources\browser-6_91015.ico" />
+    <Resource Include="Resources\login.png" />
+    <Resource Include="Resources\wallpaper.jpeg" />
+    <Resource Include="Styles\TextBlocksStyle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Models\" />
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Resources\browser-6_91015.ico" />
-    <Resource Include="Styles\TextBlocksStyle.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Resource>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
   </ItemGroup>
 
 </Project>
