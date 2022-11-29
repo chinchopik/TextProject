@@ -7,11 +7,11 @@
         xmlns:vm="clr-namespace:RemakeProject.ViewModels"
         mc:Ignorable="d"
         Title="TextAnalyzer" Height="350" Width="600" WindowStartupLocation="CenterScreen">
-    
+
     <Window.DataContext>
         <vm:TextAnalyze/>
     </Window.DataContext>
-        
+
     <Grid ShowGridLines="False">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="0.1*"/>
@@ -46,7 +46,7 @@
                        Margin="35,15,0,0"
                        Style="{DynamicResource CountSymbolsStyle}"
                        Text="{Binding Vowels, Mode=OneWay}"/>
-            
+
         <Label Content="Согласные:"
                    Margin="0,40,0,0"
                    Style="{DynamicResource LabelStyle}"/>
@@ -54,7 +54,7 @@
                        Margin="35,45,0,0"      
                        Text="{Binding Consonants, Mode=OneWay}"
                        Style="{DynamicResource CountSymbolsStyle}"/>
-                       
+
         <Label Content="Цифры:"
                    Margin="0,70,0,0"
                    Style="{DynamicResource LabelStyle}"/>
@@ -63,7 +63,7 @@
                        
                        Text="{Binding Numbers, Mode=OneWay}"
                        Style="{DynamicResource CountSymbolsStyle}"/>
-            
+
         <Label Content="Символы:"
                    Margin="0,100,0,0"
                    Style="{DynamicResource LabelStyle}"/>

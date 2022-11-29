@@ -16,7 +16,7 @@ namespace RemakeProject.ViewModels
 {
     class TextAnalyze : ViewModelBase
     {
-        
+
         private string _textBox;
 
         public string CurrentUser
@@ -71,7 +71,7 @@ namespace RemakeProject.ViewModels
 
         public void OnExecute()
         {
-            
+
             _textBox = FileTextInput.FileInput();
             OnPropertyChanged("");
         }

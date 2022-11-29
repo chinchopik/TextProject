@@ -54,7 +54,7 @@ namespace RemakeProject.ViewModels
             }
             else
             {
-                MessageBox.Show("Invalid login or password!","Error!");
+                MessageBox.Show("Invalid login or password!", "Error!");
             }
         }
 

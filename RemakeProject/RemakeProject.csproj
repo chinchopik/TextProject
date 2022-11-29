@@ -24,16 +24,16 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Models\" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Resource Include="Resources\browser-6_91015.ico" />
     <Resource Include="Resources\login.png" />
     <Resource Include="Resources\wallpaper.jpeg" />
     <Resource Include="Styles\TextBlocksStyle.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Resource>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Models\" />
   </ItemGroup>
 
   <ItemGroup>
