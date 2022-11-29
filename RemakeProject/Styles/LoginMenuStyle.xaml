@@ -11,13 +11,13 @@
         <Setter Property="Margin" Value="0,25,0,0"/>
         <Setter Property="FontFamily" Value="Calibri"/>
         <Setter Property="FontSize" Value="16"/>
-        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="Foreground" Value="Black"/>
         <Setter Property="VerticalContentAlignment" Value="Center"/>
         <Setter Property="Background">
             <Setter.Value>
                 <RadialGradientBrush>
-                    <GradientStop Color="Black" Offset="1"/>
-                    <GradientStop Color="Black" Offset="0.59"/>
+                    <GradientStop Color="#abcdef" Offset="1"/>
+                    <GradientStop Color="#abcdef" Offset="0.59"/>
                 </RadialGradientBrush>
             </Setter.Value>
         </Setter>
@@ -33,13 +33,13 @@
         <Setter Property="Margin" Value="0,0,0,30"/>
         <Setter Property="FontFamily" Value="Calibri"/>
         <Setter Property="FontSize" Value="16"/>
-        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="Foreground" Value="Black"/>
         <Setter Property="VerticalContentAlignment" Value="Center"/>
         <Setter Property="Background">
             <Setter.Value>
                 <RadialGradientBrush>
-                    <GradientStop Color="Black" Offset="1"/>
-                    <GradientStop Color="Black" Offset="0.59"/>
+                    <GradientStop Color="#abcdef" Offset="1"/>
+                    <GradientStop Color="#abcdef" Offset="0.59"/>
                 </RadialGradientBrush>
             </Setter.Value>
         </Setter>
@@ -53,7 +53,7 @@
         <Setter Property="Margin" Value="0,10,0,0"/>
         <Setter Property="Background">
             <Setter.Value>
-                <SolidColorBrush Color="#D3CCE3"/>
+                <SolidColorBrush Color="#abcdef"/>
             </Setter.Value>
         </Setter>
         <Setter Property="Template">
@@ -81,7 +81,7 @@
         <Setter Property="Margin" Value="0,10,10,0"/>
         <Setter Property="HorizontalAlignment" Value="Right"/>
         <Setter Property="VerticalAlignment" Value="Top"/>
-        <Setter Property="Foreground" Value="#b20a2c"/>
+        <Setter Property="Foreground" Value="Black"/>
         <Setter Property="BorderBrush" Value="Transparent"/>
         <Setter Property="FontWeight" Value="ExtraLight"/>
     </Style>

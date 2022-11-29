@@ -68,13 +68,6 @@
                          Grid.Row="1"
                          Text="{Binding Login, Mode=OneWayToSource, UpdateSourceTrigger=PropertyChanged}"   
                          Style="{DynamicResource LoginInputStyle}">
-                    <TextBox.Resources>
-                        <Style TargetType="{x:Type Border}">
-                            <Setter Property="CornerRadius" Value="4"/>
-                            <Setter Property="BorderThickness" Value="0.05"/>
-                            <Setter Property="BorderBrush" Value="Red"/>
-                        </Style>
-                    </TextBox.Resources>
                 </TextBox>
 
                 <Label Content="Password"
