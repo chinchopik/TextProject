@@ -8,6 +8,9 @@ using System.Threading.Tasks;
 
 namespace RemakeProject.ViewModels
 {
+    /// <summary>
+    /// Базовая ViewModel
+    /// </summary>
     public class ViewModelBase : INotifyPropertyChanged
     {
 

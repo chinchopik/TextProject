@@ -31,7 +31,7 @@
 
         <TextBlock Grid.Column="2"
                    HorizontalAlignment="Center">
-            <Hyperlink>
+            <Hyperlink TextDecorations="None">
                 <TextBlock Text ="{Binding CurrentUser, Mode=OneWay}"/>
             </Hyperlink>
         </TextBlock>
