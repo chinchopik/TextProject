@@ -11,12 +11,10 @@ using System.Windows.Input;
 
 namespace RemakeProject.ViewModels
 {
-    /// <summary>
-    /// Логика взаимодействия для LoginMenu.xaml
-    /// </summary>
     class LoginViewModel : ViewModelBase
     {
 
+        public string _login;
         private string _password;
         public string Login
         {
@@ -33,7 +31,6 @@ namespace RemakeProject.ViewModels
             set
             {
                 _password = value;
-                OnPropertyChanged("Password");
             }
         }
 
@@ -47,8 +44,7 @@ namespace RemakeProject.ViewModels
 
         public void Auth()
         {
-
-            if (Properties.Settings.Default.UserLogin == "admin" && Password == "admin")
+            if (Properties.Settings.Default.UserLogin == "admin")
             {
                 AnalyzerMenu analyzerMenu = new();
 
@@ -60,7 +56,6 @@ namespace RemakeProject.ViewModels
             {
                 MessageBox.Show("Invalid login or password!", "Error!");
             }
-
         }
 
         private bool _isChecked;

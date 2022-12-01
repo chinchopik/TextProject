@@ -14,9 +14,6 @@ using System.Windows.Input;
 
 namespace RemakeProject.ViewModels
 {
-    /// <summary>
-    /// Логика взаимодействия для AnalyzerMenu.xaml
-    /// </summary>
     class TextAnalyze : ViewModelBase
     {
 

@@ -24,6 +24,28 @@
 
     </Style>
 
+    <Style x:Key="PasswordInputStyle" TargetType="PasswordBox">
+
+        <Setter Property="Height" Value="30"/>
+        <Setter Property="Width" Value="200"/>
+        <Setter Property="Opacity" Value="0.8"/>
+        <Setter Property="VerticalAlignment" Value="Bottom"/>
+        <Setter Property="Margin" Value="0,0,0,30"/>
+        <Setter Property="FontFamily" Value="Calibri"/>
+        <Setter Property="FontSize" Value="16"/>
+        <Setter Property="Foreground" Value="Black"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="Background">
+            <Setter.Value>
+                <RadialGradientBrush>
+                    <GradientStop Color="#abcdef" Offset="1"/>
+                    <GradientStop Color="#abcdef" Offset="0.59"/>
+                </RadialGradientBrush>
+            </Setter.Value>
+        </Setter>
+
+    </Style>
+
     <Style x:Key="ButtonInputStyle" TargetType="Button">
         <Setter Property="Width" Value="50"/>
         <Setter Property="Height" Value="50"/>
